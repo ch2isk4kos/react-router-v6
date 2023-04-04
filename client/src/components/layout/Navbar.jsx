@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 
 const Navbar = () => {
   return (
-    <>
+    <nav className="Navbar">
       <Link to="/">LOGO</Link>
       <ul className="Navbar">
         <li>
@@ -13,7 +13,8 @@ const Navbar = () => {
           <Link to="/login">Login</Link>
         </li>
       </ul>
-    </>
+      <Outlet />
+    </nav>
   );
 };
 
