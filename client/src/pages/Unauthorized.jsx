@@ -6,6 +6,7 @@ const Unauthorized = () => {
     <div>
       <h1>Access Restricted</h1>
       <em>You need credentials to access this page.</em>
+      <br />
       <Link to="/">Go Home</Link>
     </div>
   );
